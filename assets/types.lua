@@ -50,10 +50,10 @@ function ending(game, x, y, dt)
 end
 
 return {
-    [1] = {c = {17, 17, 17, 255}, name = "blank", f = nil, time = 0},
-    [2] = {c = {0, 150, 255, 255}, name = "source", f = source, time = 0.1},
-    [3] = {c = {255, 80, 0, 255}, name = "end", f = ending, time = 0.1},
-    [4] = {c = {128, 128, 128, 255}, name = "wall", f = nil, time = 0},
-    [5] = {c = {50, 255, 0, 255}, name = "walldissolver", f = walldissolve, time = 0},
-    [6] = {c = {50, 50, 50, 255}, name = "unplaceable", f = nil, time = 0},
+    [1] = {c = {17, 17, 17, 255}, name = "Nothing", f = nil, time = 0},
+    [2] = {c = {0, 150, 255, 255}, bc = {0, 0, 0, 32}, name = "Source", f = source, time = 0.1},
+    [3] = {c = {255, 80, 0, 255}, bc = {0, 0, 0, 32}, name = "End", f = ending, time = 0.1},
+    [4] = {c = {128, 128, 128, 255}, name = "Wall", f = nil, time = 0},
+    [5] = {c = {50, 255, 0, 255}, name = "Dissolver", f = walldissolve, time = 0},
+    [6] = {c = {50, 50, 50, 255}, name = "Almost Nothing", f = nil, time = 0},
 }

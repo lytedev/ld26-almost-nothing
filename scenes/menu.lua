@@ -25,7 +25,7 @@ function Menu:init()
 
     self.itemColor = {128, 128, 128, 255}
     self.selectColor = {255, 255, 255, 255}
-    self.selectedItem = 2
+    self.selectedItem = 0
     self:nextMenuItem()
 end
 

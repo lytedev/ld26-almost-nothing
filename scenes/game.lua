@@ -14,7 +14,7 @@ function Game:init()
     end
 
     self.currentLevel = 1
-    self.interfaceText = "Press Space to Pause/Play"
+    self.interfaceText = "Pause/Unpause (P)"
     self.paused = true
 
     self.inventory = {}
@@ -26,6 +26,14 @@ function Game:loadLevelFromImage(filename)
     self.inventory = {}
     self.board = {}
 
+    local fp = assetManager.assetDir .. assetManager.imageDir .. filename .. assetManager.imageExt
+    print("Trying to load fp " .. fp)
+    if not love.filesystem.exists(fp) then
+        print("Switching states before it's too late!")
+        self.currentLevel = 1
+        switchStates("win")
+        return
+    end
     local img = assetManager:getImage(filename, filename, nil, true)
     local w = img:getWidth()
     local h = img:getHeight()
@@ -119,9 +127,9 @@ function Game:update(dt)
     end
 
     if self.paused then
-        self.interfaceText = "Paused - Press Space to Unpause"
+        self.interfaceText = "Unpause (P)"
     else
-        self.interfaceText = "Running - Press Space to Pause"
+        self.interfaceText = "Pause (P)"
         local s = self.scale
         local max = self.boardSize.x * self.boardSize.y
         for i = 1, max do
@@ -210,6 +218,8 @@ end
 
 function Game:draw()
     local s = self.scale
+    local lw = s / 8
+    love.graphics.setLineWidth(lw)
     local max = self.boardSize.x * self.boardSize.y
     for i = 1, max do
         local bt = self.board[i]
@@ -219,7 +229,12 @@ function Game:draw()
         local y = math.floor((i - 1) / self.boardSize.x)
         love.graphics.setColor(t.c)
         love.graphics.rectangle("fill", x * s, y * s, s, s)
+        if t.bc then
+            love.graphics.setColor(t.bc)
+            love.graphics.rectangle("line", x * s + lw / 2, y * s + lw / 2, s - lw, s - lw)
+        end
     end
+    love.graphics.setLineWidth(1)
 
     love.graphics.setColor(255, 255, 255, 255)
     local cx = self.cursorPos.x * self.scale - math.ceil(s / 2) + 1.5
@@ -258,13 +273,40 @@ function Game:draw()
                 if self.selectedInventoryItem == i then
                     love.graphics.rectangle("line", adjinvx - 0.5, invy - 0.5, invsqsz + 1, invsqsz + 1)
                 end
-                love.graphics.print(self.inventory[i], adjinvx + invsqsz + 2, invy - 1)
+                love.graphics.print(self.inventory[i], adjinvx + invsqsz + 4, invy + 7)
             end
         end
     end
 
+    if self.paused then
+        self.interfaceText = "Unpause (P)"
+    else
+        self.interfaceText = "Pause (P)"
+    end
+
+    local sii = self.selectedInventoryItem
+    if self.inventory[sii] then
+        if self.inventory[sii] >= 1 then
+            self.interfaceText = self.interfaceText .. " | Drop " .. self.types[sii].name .. " (Space)"
+            -- local str = self.types[sii].name
+            -- love.graphics.print(str, w - 10 - font:getWidth(str), invy)
+        end
+    end
+
+    local bc = self.board[self:coordsToId(self.cursorPos.x, self.cursorPos.y)]
+    if self.types[bc.id] then
+        local hbn = self.types[bc.id].name
+        local x = w - 10 - invsqsz
+        local y = invy
+        love.graphics.setColor(self.types[bc.id].c)
+        love.graphics.rectangle("fill", x, y, invsqsz, invsqsz)
+        love.graphics.setColor(255, 255, 255, 255)
+        love.graphics.print(hbn, x - font:getWidth(hbn) - 3, y + 4)
+    end
+
     love.graphics.setColor(255, 255, 255, 255)
     love.graphics.print(self.interfaceText, padding, h - config.screen.interfaceHeight + padding)
+    self.interfaceText = ""
 end
 
 return Game

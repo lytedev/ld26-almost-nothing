@@ -7,11 +7,15 @@ function Help:init()
     self.helpPages = {
         {
             title = "Winning",
-            text = "To win a level in Almost Nothing, you must get a blue block to touch the orange block. A simple concept, but with the addition of other elements and obstacles, this can become fairly difficult!",
+            text = "To win a level in Almost Nothing, you must get a blue block to touch the orange block. A simple concept, but with the addition of other elements and obstacles, this can become fairly difficult! There will be many times when you need to restart the level, which you can do by pressing the R key.",
+        },
+        {
+            title = "Pausing",
+            text = "You can pause the game at any time with the P key. Pausing is an important aspect of the game that allows you to stop and think or make a fast move before it's too late.",
         },
         {
             title = "Placing Blocks",
-            text = "To place a block, move your cursor over a placeable area (the darkest squares in every level) with the arrow keys or WASD and press the Spacebar.",
+            text = "To place a block, move your cursor over a placeable area (the darkest squares in every level) with the arrow keys or WASD and press the Spacebar.\n\nNote that you can ONLY place blocks on Nothing blocks. Even Almost Nothing blocks are enough to keep you from placing a block.",
         },
     }
 
@@ -38,7 +42,7 @@ end
 
 function Help:keypressed(k)
     if k == "escape" then
-        love.event.quit()
+        switchStates("menu")
     end
 
     if k == "up" or k == "w" or k == "left" or k == "a" then

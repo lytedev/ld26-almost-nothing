@@ -1,13 +1,11 @@
 function love.conf(t)
-    print("TODO: EDIT CONF DETAILS")
-
     config = t
 
     t.title = "Almost Nothing"
     t.author = "Daniel \"lytedev\" Flanagan"
     t.url = "http://lytedev.com"
     t.identity = "almost-nothing"
-    t.identityVersion = "Alpha 0.3"
+    t.identityVersion = "Alpha 0.4"
     t.version = "0.8.0"
     t.console = false
     t.release = false
