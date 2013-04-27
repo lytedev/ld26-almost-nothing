@@ -115,7 +115,7 @@ end
 
 function Game:update(dt)
     if love.keyboard.isDown("escape") then
-        Gamestate:switch(require("scenes.menu"))
+        switchStates("menu")
     end
 
     if self.paused then

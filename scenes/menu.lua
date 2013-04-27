@@ -11,11 +11,11 @@ function Menu:init()
         },
         {
             text = "Play",
-            callback = function() print("Play game..."); Gamestate:switch(require("scenes.game")) end
+            callback = playGame
         },
         {
             text = "Help",
-            callback = function() return end
+            callback = function() switchStates("help") return end
         },
         {
             text = "Quit",
@@ -27,6 +27,10 @@ function Menu:init()
     self.selectColor = {255, 255, 255, 255}
     self.selectedItem = 2
     self:nextMenuItem()
+end
+
+function playGame()
+    switchStates("game")
 end
 
 function Menu:update(dt)
