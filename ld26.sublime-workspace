@@ -1,0 +1,1203 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"enem",
+				"enemyCount"
+			],
+			[
+				"proj",
+				"projectile"
+			],
+			[
+				"size",
+				"sizeratio"
+			],
+			[
+				"ass",
+				"assetManager"
+			],
+			[
+				"im",
+				"imageExt"
+			],
+			[
+				"iher",
+				"inheritVelocity"
+			],
+			[
+				"inher",
+				"inheritVelocity"
+			],
+			[
+				"inherit",
+				"inheritAngle"
+			],
+			[
+				"game",
+				"gameobjects"
+			],
+			[
+				"Game",
+				"Gameobject"
+			],
+			[
+				"parent",
+				"parentShip"
+			],
+			[
+				"gameob",
+				"gameobjects"
+			],
+			[
+				"gameobje",
+				"gameobjectsToDestroy"
+			],
+			[
+				"gameobj",
+				"Gameobject"
+			],
+			[
+				"getWOr",
+				"getWorldCenter"
+			],
+			[
+				"tit",
+				"titlePosition"
+			],
+			[
+				"title",
+				"titleSpacing"
+			],
+			[
+				"sele",
+				"selectedItem"
+			],
+			[
+				"focus",
+				"focusable"
+			],
+			[
+				"grad",
+				"gradientQuad"
+			],
+			[
+				"lt",
+				"lytedevLogo"
+			],
+			[
+				"sword",
+				"swordHover"
+			],
+			[
+				"delet",
+				"deleteme"
+			],
+			[
+				"tile",
+				"tilesize"
+			],
+			[
+				"tiletyp",
+				"tileTypeId"
+			],
+			[
+				"pixe",
+				"pixelTypes"
+			],
+			[
+				"backgroun",
+				"backgrounds"
+			],
+			[
+				"gam",
+				"gameObjectFolder"
+			],
+			[
+				"asset",
+				"assetRoot"
+			],
+			[
+				"butt",
+				"buttonFont"
+			],
+			[
+				"tite",
+				"titleFont"
+			],
+			[
+				"coll",
+				"collisionOffset"
+			],
+			[
+				"colli",
+				"collisionOffset"
+			],
+			[
+				"dea",
+				"deathAnimS"
+			],
+			[
+				"update",
+				"updateLastMousePosition"
+			],
+			[
+				"anim",
+				"animationSets"
+			],
+			[
+				"anima",
+				"animationset"
+			],
+			[
+				"image",
+				"imageFolder"
+			],
+			[
+				"iden",
+				"identityVersion"
+			],
+			[
+				"par",
+				"parallax"
+			],
+			[
+				"curr",
+				"currentCamera"
+			],
+			[
+				"collide",
+				"collideObjectWithTiles"
+			],
+			[
+				"tileExi",
+				"tileExistsById"
+			],
+			[
+				"getTileTyp",
+				"getTileTypeById"
+			],
+			[
+				"getTile",
+				"getTileIdFromCoords"
+			],
+			[
+				"til",
+				"tilesize"
+			],
+			[
+				"ful",
+				"isFullscreened"
+			],
+			[
+				"tiles",
+				"tilesize"
+			],
+			[
+				"tilse",
+				"tilesize"
+			],
+			[
+				"getTil",
+				"getTileTypeById"
+			],
+			[
+				"else",
+				"elseif"
+			],
+			[
+				"lytede",
+				"lytedevLogo"
+			],
+			[
+				"quad",
+				"quadData"
+			],
+			[
+				"curre",
+				"currentTime"
+			],
+			[
+				"frames",
+				"frames"
+			],
+			[
+				"Animat",
+				"AnimationState"
+			],
+			[
+				"animation",
+				"animationSet"
+			],
+			[
+				"fixp",
+				"fixPosition"
+			],
+			[
+				"current",
+				"currentFrames"
+			],
+			[
+				"getCurr",
+				"getCurrentFrame"
+			],
+			[
+				"getC",
+				"getCurrentAnimation"
+			],
+			[
+				"frame",
+				"currentFrame"
+			],
+			[
+				"fram",
+				"frames"
+			],
+			[
+				"bounc",
+				"bouncing"
+			],
+			[
+				"loop",
+				"loopStart"
+			],
+			[
+				"boun",
+				"bounce"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"ac",
+				"activeBackgroundColor"
+			],
+			[
+				"GUI",
+				"GUIObject"
+			],
+			[
+				"camera",
+				"cameraClass"
+			],
+			[
+				"speed",
+				"speed"
+			],
+			[
+				"des",
+				"desiredAngle"
+			],
+			[
+				"dest",
+				"destroyedFixtures"
+			],
+			[
+				"body",
+				"bodyType"
+			],
+			[
+				"pixel",
+				"pixelsPerMeter"
+			],
+			[
+				"loadMenu",
+				"loadMenuCallback"
+			],
+			[
+				"Time",
+				"time"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"active",
+				"activeColor"
+			],
+			[
+				"menu",
+				"menubutton"
+			],
+			[
+				"scal",
+				"scaleHeight"
+			],
+			[
+				"test",
+				"testLabel"
+			],
+			[
+				"aci",
+				"activeColor"
+			],
+			[
+				"mouse",
+				"mouseActivates"
+			],
+			[
+				"acti",
+				"activate"
+			],
+			[
+				"act",
+				"activate"
+			],
+			[
+				"gui",
+				"guiobject"
+			],
+			[
+				"align",
+				"alignment"
+			],
+			[
+				"text",
+				"textInput"
+			],
+			[
+				"draw",
+				"drawstr"
+			],
+			[
+				"ca",
+				"currentCaratTime"
+			],
+			[
+				"cara",
+				"caratDelay"
+			],
+			[
+				"time",
+				"timetable"
+			],
+			[
+				"file",
+				"fileData"
+			],
+			[
+				"fil",
+				"fileData"
+			],
+			[
+				"load",
+				"loadMenuCallback"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"lyte",
+				"lytedevLogo_update"
+			],
+			[
+				"c",
+				"currentQuad"
+			],
+			[
+				"curren",
+				"currentlogo"
+			],
+			[
+				"lyted",
+				"lytedevLogo"
+			],
+			[
+				"graph",
+				"love.graphics.print"
+			],
+			[
+				"Gui",
+				"GUILayout"
+			],
+			[
+				"Network",
+				"NetworkPlayer"
+			],
+			[
+				"Remov",
+				"RemovePlayer"
+			],
+			[
+				"Player",
+				"PlayerJoinRequest"
+			],
+			[
+				"rec",
+				"love.graphics.rectangle"
+			],
+			[
+				"gra",
+				"love.graphics.circle"
+			],
+			[
+				"key",
+				"love.keypressed"
+			],
+			[
+				"grap",
+				"love.graphics.draw"
+			],
+			[
+				"or",
+				"originalTime"
+			],
+			[
+				"players",
+				"playersDownloaded"
+			],
+			[
+				"play",
+				"playersDownloaded"
+			],
+			[
+				"password",
+				"password"
+			],
+			[
+				"KEYS",
+				"KEY_MOUSE_OFFSET"
+			],
+			[
+				"clock",
+				"Clock"
+			],
+			[
+				"pr",
+				"priority"
+			],
+			[
+				"P",
+				"p"
+			],
+			[
+				"in",
+				"inventory"
+			],
+			[
+				"s",
+				"slot_name"
+			],
+			[
+				"slot",
+				"slot_name"
+			],
+			[
+				"gear",
+				"gear_bonus"
+			],
+			[
+				"pla",
+				"players"
+			],
+			[
+				"attack",
+				"attackers"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"target",
+				"target_enemy"
+			],
+			[
+				"to_",
+				"to_full_s"
+			],
+			[
+				"effec",
+				"effects_list"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 253,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scenes/game.lua",
+			"settings":
+			{
+				"buffer_size": 176,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "utils.lua",
+			"settings":
+			{
+				"buffer_size": 428,
+				"line_ending": "Windows",
+				"name": "utils.lua"
+			}
+		},
+		{
+			"file": "conf.lua",
+			"settings":
+			{
+				"buffer_size": 695,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "hump/gamestate.lua",
+			"settings":
+			{
+				"buffer_size": 2769,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Love Project",
+	"command_palette":
+	{
+		"height": 335.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: S",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 386.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Daniel/Google Drive/projects/ld26/ld26.sublime-project",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/utils.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/ld26practice.sublime-project",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/gameobjects/weapons/repeater.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/assets/assetmanager.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/gameobjects/gameobject.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/gameobjects/weapons/trishot.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/gameobjects/weapons/bigtrishot.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/conf.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/gameobjects/projectile.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/gameobjects/ship.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/main.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/gameobjects/player.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/scenes/game.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/utils.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/hump/class.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/gameobjects/weapon.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26practice/hump/vector.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/assets/assetmanager.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/objects/projectile.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/objects/gameobject.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/scenes/game.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/main.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/escapeprevention.sublime-project",
+		"/C/Users/Public/Applications/xampp/htdocs/testenv/index.php",
+		"/C/Users/Public/Applications/xampp/htdocs/testenv/myfile",
+		"/C/Users/Public/Applications/xampp/htdocs/wrestling/index.php",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/objects/player.lua",
+		"/C/Users/Public/Applications/xampp/htdocs/old_projects/oophp/index.php",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/scenes/quit.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/button.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/conf.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/scenes/mainmenu.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/main.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/hump/class.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/utils.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/conf.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/assetmanager.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/hump/gamestate.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/scenes/intro.lua",
+		"/C/Users/Daniel/Google Drive/projects/love2d/infantryclone/moduletest.sublime-project",
+		"/C/Users/Public/Applications/WoWServer/2.4.3/configs/arcemu-world.conf",
+		"/C/Users/Public/Applications/WoWServer/2.4.3/configs/arcemu-realms.conf",
+		"/C/Users/Public/Applications/WoWServer/2.4.3/Sun++ SQLS/ReadMeFirstEnables.txt",
+		"/C/Users/Public/Games/Minecraft/server/server.properties",
+		"/C/Users/Public/Applications/WoWServer/2.4.3/configs/arcemu-optional.conf",
+		"/C/Users/Public/Applications/WoWServer/2.4.3/configs/arcemu-logonserver.conf",
+		"/C/Users/Public/Applications/WoWServer/2.4.3/configs/arcemu-voicechat.conf",
+		"/C/Users/Public/Applications/WoWServer/arcemu/configs/realms.conf",
+		"/C/Users/Public/Applications/WoWServer/arcemu/configs/logon.conf",
+		"/C/Users/Public/Applications/WoWServer/arcemu/configs/world.conf",
+		"/C/Users/Daniel/Google Drive/projects/pelicantest/develop_server.sh",
+		"/C/Users/Daniel/Google Drive/projects/pelicantest/content/testpost.md",
+		"/C/Users/Daniel/Google Drive/projects/pelicantest/pelicanconf.py",
+		"/C/Users/Daniel/Google Drive/projects/pelicantest/publishconf.py",
+		"/C/Users/Daniel/Google Drive/projects/pelicantest/Makefile",
+		"/C/Users/Daniel/Google Drive/projects/pelicantest/pelicantest.sublime-project",
+		"/C/Users/Daniel/Google Drive/projects/pelicantest/__init__.py",
+		"/C/Users/Daniel/Google Drive/projects/flasktest/flasktest.sublime-project",
+		"/C/Users/Daniel/Google Drive/projects/flasktest/__init__.py",
+		"/C/Users/Daniel/Google Drive/projects/pyhash/redislolz.py",
+		"/C/Users/Public/Games/Dwarf Fortress/Lazy Newb Pack v15.txt",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/animation/death.dat",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/animation/tiles.dat",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/level/test.dat",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/hump/vector.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gameobjects/sprite.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/level/tile.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gameobjects/character.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/level/level.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/level/tilegrid.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/animations/animation.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/animations/animationstate.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/README.md",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/guiobject.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/menu.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/labels/titleversioninfo.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/menus/mainmenu.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/gameobject/enemy/deathbolt.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/gameobject/enemy/ghost.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gameobjects/gameobject.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/scenes/game.lua",
+		"/C/Users/Daniel/AppData/Local/Temp/fz3temp-1/config.php",
+		"/C/Users/Daniel/AppData/Local/Temp/fz3temp-1/functions_forumlist.php",
+		"/C/Users/Daniel/Documents/todo",
+		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/LyricScreen/LyricScreen/bin/Songs/testsong.txt",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Scripts/edit.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Scripts/maxrange.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Scripts/noclip.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Scripts/pimpgun.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Scripts/startup.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Commands/god.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Commands/item.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Commands/playerfields.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 11/Projects/WraithMod/WraithMod/bin/x86/Release/Commands/preset.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/level/background.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/hump/camera.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/misc/logo.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Warp Edge/Warp Edge/Warp Edge/Background.cs",
+		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Platformer/Platformer/GameObject.cpp",
+		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Platformer/Platformer/Level.cpp",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/animations/animationset.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/animations/death.dat",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/animations/tiles.dat",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/animations/animationframe.lua",
+		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Warp Edge/Warp Edge/Warp Edge/Character.cs",
+		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Warp Edge/Warp Edge/Warp Edge/Level.cs",
+		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Warp Edge/Warp Edge/Warp Edge/bin/x86/Debug/settings.txt",
+		"/C/Users/Public/Games/Minecraft/tekkbin/server.properties",
+		"/C/Users/Daniel/Documents/project_battery_design_doc",
+		"/C/Users/Daniel/Documents/dese.mo.gov_divcareered_documents_GED_application.pdf",
+		"/C/Users/Daniel/Documents/castlestoryfaq. You must have paid $25 on the Castle Story kick",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/misc/fader.lua",
+		"/C/Users/Public/Applications/Sublime/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Public/Applications/Sublime/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/hump/gamestate.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/menuitem.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/label.lua",
+		"/C/Users/Public/Applications/xampp/htdocs/dfr/index.php",
+		"/C/Users/Public/Applications/xampp/htdocs/dfr/daniel_flanagan_resume.html",
+		"/C/Users/Public/Applications/xampp/htdocs/old_projects/kfr/karen_flanagan_resume.html",
+		"/C/Users/Public/Applications/xampp/htdocs/dfr/reset.css",
+		"/C/Users/Public/Applications/xampp/htdocs/dfr/style.css",
+		"/C/Users/Public/Applications/xampp/htdocs/dfr/fileupload.php",
+		"/C/Users/Daniel/Documents/wifi",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/lick.lua",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/warpedge.sublime-project",
+		"/C/Users/Daniel/Google Drive/projects/warpedge/hump/ringbuffer.lua"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"was",
+			"self.player",
+			"sin",
+			"version",
+			"build",
+			"print ",
+			"require",
+			"x",
+			"1",
+			"2",
+			"0",
+			"1",
+			"0",
+			"getHeight",
+			"collideWith(",
+			"print",
+			" print(",
+			"print(",
+			"print(string.format",
+			"print",
+			"print(",
+			"r",
+			"rt",
+			"max",
+			"startids",
+			"currentCamera",
+			"max",
+			"startids",
+			"AnimationFrame",
+			"collide",
+			"self.size",
+			"self\\:",
+			"collide",
+			"\\n",
+			".\n",
+			"print",
+			"print(",
+			"key",
+			"key\n",
+			"key",
+			"Key",
+			"remove",
+			"self.align",
+			" </p>",
+			"\n\n",
+			"\\n\\w",
+			"16",
+			"71",
+			"\n",
+			"scene",
+			"menus.settings",
+			"guimenu",
+			"playButton",
+			"menus.main",
+			"getStr",
+			"guiobject.",
+			"label",
+			"callback",
+			"button",
+			"love",
+			"white",
+			"whitespace",
+			"show",
+			"tab",
+			"new",
+			"print",
+			"menus.mainmenu",
+			"intro",
+			"top",
+			"print",
+			"||",
+			"self.activeItem",
+			"Button",
+			"v = ",
+			"ground",
+			"quit",
+			"leave",
+			"quit",
+			"join",
+			"JOIN",
+			"hili",
+			":",
+			"ownmsgnick = ",
+			"time",
+			"sb-item",
+			"%c",
+			"time",
+			"bar",
+			"login",
+			"log",
+			"    ",
+			"'",
+			",",
+			"tuple, array",
+			"is_array(other)",
+			"instanceof",
+			"range",
+			"event",
+			"\\n",
+			"true",
+			"false",
+			"nil",
+			"@",
+			"true",
+			"false",
+			"nil",
+			"@",
+			";",
+			"cpp",
+			"span",
+			"}\n",
+			"rising_",
+			"DELETE FROM `rising_",
+			"EXISTS `rising_",
+			"f70",
+			"\n\n",
+			"lytedev",
+			"d40",
+			"11px",
+			"? ",
+			"- ",
+			"\n\n",
+			"page",
+			"font-weight",
+			"3deg",
+			"/xampp",
+			"#666",
+			"#555"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"self",
+			"print(",
+			"y",
+			"0",
+			"1",
+			"0",
+			"2",
+			"botright",
+			"topleft",
+			"botright",
+			"topleft",
+			"alignment",
+			"</p>\n\n</p>",
+			"</p>\n\n<p>",
+			" ",
+			"\n\n",
+			"menus.quit",
+			"backButton",
+			"menus.settings",
+			"gui.",
+			"button",
+			"onSelect",
+			"textarea",
+			"menus.quitmenu",
+			"mainmenu",
+			"or",
+			"ni",
+			"block",
+			"leftwall",
+			"rightwall",
+			"	",
+			"",
+			",\n",
+			"tuple, list",
+			"isinstance(other, (tuple, array))",
+			"isinstance",
+			"e",
+			"True",
+			"False",
+			"None",
+			"self.",
+			"True",
+			"False",
+			"None",
+			"self.",
+			";\n",
+			"\n",
+			"rkc",
+			"DELETE FROM `rkc",
+			"EXISTS `rkc",
+			"d40",
+			"\n",
+			"f70",
+			"",
+			"\n",
+			"5deg",
+			"/Applications/xampp",
+			"/Applications/xampp/mysql",
+			"#444",
+			"#333",
+			"#555",
+			"#444",
+			"C",
+			"B",
+			"Bag",
+			"Bag\n",
+			"\n",
+			";\n",
+			"\n;\n",
+			"\n",
+			"/home/lytedev/public_html/",
+			"\n",
+			"/",
+			"/\n",
+			"/home/lytedev/public_html/\n",
+			"\n",
+			"/home/lytedev/public_html/",
+			"/",
+			"/home/lytedev/public_html/",
+			"/",
+			"/home/lytedev/public_html",
+			"/",
+			"/home/lytedev/public_html/",
+			"/",
+			"\n",
+			"/public_html",
+			"",
+			"    ",
+			"o",
+			"\no",
+			"i",
+			"olc",
+			"-",
+			"-\n-\n-",
+			"\\\\",
+			"",
+			"600px",
+			"Buttons.Big",
+			"WarpEdge",
+			"speed",
+			"level",
+			"Game.Level",
+			"Game.Level\nGame.Level",
+			"WrackEngine.Graphics",
+			"Menu",
+			"Game.Menu",
+			"bigButton",
+			"0077ff",
+			"0088ff",
+			"&",
+			"580px",
+			"660px",
+			"720px",
+			"760px"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.lua",
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								190,
+								190
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scenes/game.lua",
+					"settings":
+					{
+						"buffer_size": 176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								110
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "utils.lua",
+					"settings":
+					{
+						"buffer_size": 428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								247
+							]
+						],
+						"settings":
+						{
+							"auto_name": "utils.lua",
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "conf.lua",
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								695,
+								695
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "hump/gamestate.lua",
+					"settings":
+					{
+						"buffer_size": 2769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1860,
+								1860
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 72.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true
+}

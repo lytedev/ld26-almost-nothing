@@ -1,0 +1,22 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "file_exclude_patterns": []
+        }
+    ],
+    "settings":
+    {
+        "syntax": "Lua Dev"
+    },
+    "build_systems":
+    [
+        {
+            "name": "Love Project",
+            "cmd": ["love", "$project_path"]
+            //"cmd": ["love", "$project_path"],
+            //"working_dir": "$project_path"
+        }
+    ]
+}
