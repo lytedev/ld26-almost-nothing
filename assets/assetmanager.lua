@@ -7,14 +7,17 @@ local AssetManager = Class{
         self.imageDir =     "img/"
         self.fontDir =      "font/"
         self.soundDir =     "sfx/"
+        self.musicDir =     "music/"
 
         self.imageExt =     ".png"
         self.fontExt =      ".ttf"
         self.soundExt =     ".wav"
+        self.musicExt =     ".ogg"
 
         self.images = {}
         self.fonts = {}
         self.sounds = {}
+        self.music = {}
     end
 }
 
@@ -46,7 +49,13 @@ end
 function AssetManager:getNewSound(f, ext)
     ext = ext or self.soundExt
     f = self.assetDir .. self.soundDir .. f .. ext
-    return love.audio.newSource(f)
+    return love.audio.newSource(f, "stream")
+end
+
+function AssetManager:getMusic(f, ext)
+    ext = ext or self.musicExt
+    f = self.assetDir .. self.musicDir .. f .. ext
+    return love.audio.newSource(f, "stream")
 end
 
 return AssetManager

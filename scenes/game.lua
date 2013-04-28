@@ -24,7 +24,7 @@ function Game:init()
     self.paused = true
     self.hopeless = false
 
-    self:loadLevel(1)
+    self:loadLevel(14)
 end
 
 function Game:loadLevel(id)
@@ -117,7 +117,9 @@ function Game:win()
     self.winning = false
     self.levelId = self.levelId + 1
     Game:loadLevel(self.levelId)
-    love.audio.play(assetManager:getNewSound("win"))
+    local ws = assetManager:getNewSound("win")
+    ws:setVolume(0.2)
+    love.audio.play(ws)
     self.paused = true
     self.hopeless = false
 end
@@ -181,7 +183,9 @@ function Game:restart()
     self.cursor = cp
     self.paused = true
     self.hopeless = false
-    love.audio.play(assetManager:getNewSound("restart"))
+    local rs = assetManager:getNewSound("restart")
+    rs:setVolume(0.2)
+    love.audio.play(rs)
 end
 
 function Game:keypressed(k)
@@ -280,7 +284,7 @@ function Game:update(dt)
     end
     if self.inventory then
         if self.inventory[2] then
-            if self.inventory[2] < 1 and tsources < 1 and not hopeless then
+            if self.inventory[2] < 1 and tsources < 1 and not self.hopeless then
                 local hs = assetManager:getNewSound("hopeless")
                 hs:setVolume(0.4)
                 love.audio.play(hs)

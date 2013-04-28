@@ -7,7 +7,7 @@ function Help:init()
     self.helpPages = {
         {
             title = "Winning",
-            text = "To win a level in Almost Nothing, you must get a blue block to touch the orange block. A simple concept, but with the addition of other elements and obstacles, this can become fairly difficult! There will be many times when you need to restart the level, which you can do by pressing the R key.",
+            text = "To win a level in Almost Nothing, you must get a Source block (the blue ones!) to touch an End block (the orange ones!). A simple concept, but with the addition of other elements and obstacles, this can become fairly difficult! There will be many times when you need to restart the level, which you can do by pressing the R key.",
         },
         {
             title = "Placing Blocks",
@@ -39,7 +39,11 @@ function Help:init()
         },
         {
             title = "Swap Block",
-            text = "The Swap block infects an adjacent block, causing it to move against it's will.",
+            text = "The Swap block infects the block to it's left, causing it to move against it's will. The block on it's right will be copied as the infected block moves along.",
+        },
+        {
+            title = "Death Block",
+            text = "The Death block will cause you to lose of a Source block touches it. Beware of the Death block!",
         },
     }
 

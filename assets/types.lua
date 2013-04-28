@@ -25,6 +25,10 @@ function sourceSpread(tile, game, x, y, dt)
         if t.typeId == 1 or t.typeId == 5 then
             game:setTileType(x, y, 2)
         end
+        if t.typeId == 10 then
+            game:restart()
+            return -1
+        end
         if t.typeId == 3 then
             game:win()
             return -1
@@ -37,7 +41,7 @@ function walldissolve(tile, game, x, y, dt)
         for yy = y - 1, y + 1 do
             game:setTileType(xx, yy, 1)
             local ds = assetManager:getNewSound("dissolve")
-            ds:setVolume(0.2)
+            ds:setVolume(0.05)
             love.audio.play(ds)
         end
     end
@@ -50,7 +54,6 @@ function tmpwalldissolve(tile, game, x, y, dt)
             if t then
                 t.callbackTime = 1
                 t.callback = function(tile, game, x, y, dt)
-                    local ds = assetManager:getNewSound("dissolve")
                     love.audio.play(assetManager:getNewSound("shiny"))
                     game:setTileType(x, y, 4)
                 end
@@ -114,4 +117,5 @@ return {
     {typeId = 7, time = 0, cbtime = 0.4, callback = decaysource, color = {0, 120, 250, 255}, name = "Decayed Source"},
     {typeId = 8, time = 0, cbtime = 0, callback = tmpwalldissolve, color = {200, 200, 0, 255}, name = "Fizzle"},
     {typeId = 9, time = 0, cbtime = 0, callback = sideswap, color = {120, 0, 255, 255}, name = "Side Swap"},
+    {typeId = 10, time = 0, cbtime = 0, callback = nil, color = {120, 0, 0, 255}, name = "Death"},
 }

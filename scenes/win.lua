@@ -4,6 +4,8 @@ local Gamestate = require("hump.gamestate")
 local Win = Gamestate:new()
 
 function Win:init()
+    self.potato = assetManager:getImage("potato")
+    self.potatoAngle = 0
 end
 
 function Win:keypressed(k)
@@ -13,7 +15,7 @@ function Win:keypressed(k)
 end
 
 function Win:update(dt)
-
+    self.potatoAngle = self.potatoAngle + 1 * dt
 end
 
 function Win:draw()
@@ -35,6 +37,16 @@ function Win:draw()
     love.graphics.line(x1, y1, x2, y1)
     local font = assetManager:getFont("px")
     love.graphics.setFont(font)
+
+    love.graphics.setColor(255, 255, 255, 255)
+    local scale = sw / 64
+    local pw = self.potato:getWidth()
+    local ph = self.potato:getHeight()
+    local scw = pw * scale
+    local sch = ph * scale
+    local px = sw / 2
+    local py = sh / 1.8
+    love.graphics.draw(self.potato, px, py, self.potatoAngle, scale, scale, pw / 2, ph / 2)
 
     love.graphics.setColor(255, 255, 255, 255)
     local str = string.format("Press Escape to return to the menu")
