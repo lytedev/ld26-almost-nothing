@@ -10,8 +10,12 @@ function Help:init()
             text = "To win a level in Almost Nothing, you must get a Source block (the blue ones!) to touch an End block (the orange ones!). A simple concept, but with the addition of other elements and obstacles, this can become fairly difficult! There will be many times when you need to restart the level, which you can do by pressing the R key.",
         },
         {
-            title = "Placing Blocks",
-            text = "To place a block, move your cursor over a placeable area (the darkest squares in every level) with the arrow keys or WASD and press the Spacebar.\n\nNote that you can ONLY place blocks on Nothing blocks. Even Almost Nothing blocks are enough to keep you from placing a block.",
+            title = "Dropping Blocks",
+            text = "To drop a block, move your cursor over a droppable area (the darkest squares in every level) with the arrow keys or WASD and press the Spacebar.\n\nNote that you can ONLY drop blocks on Nothing blocks. Even Almost Nothing blocks are enough to keep you from dropping a block.",
+        },
+        {
+            title = "Timing",
+            text = "There are many levels where you need to time the placement of a block",
         },
         {
             title = "Source Block",
