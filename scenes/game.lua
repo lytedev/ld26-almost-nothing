@@ -25,7 +25,7 @@ function Game:init()
     self.paused = true
     self.hopeless = false
 
-    self:loadLevel(11)
+    self:loadLevel(1)
 end
 
 function Game:loadLevel(id)

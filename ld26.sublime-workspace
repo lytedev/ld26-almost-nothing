@@ -4,6 +4,150 @@
 		"selected_items":
 		[
 			[
+				"rest",
+				"restart"
+			],
+			[
+				"potat",
+				"potatoAngle"
+			],
+			[
+				"pot",
+				"potatoAngle"
+			],
+			[
+				"typ",
+				"typeId"
+			],
+			[
+				"Tra",
+				"trailType"
+			],
+			[
+				"trai",
+				"trailType"
+			],
+			[
+				"tr",
+				"trailType"
+			],
+			[
+				"callba",
+				"callbackTime"
+			],
+			[
+				"cal",
+				"callbackTime"
+			],
+			[
+				"left",
+				"leftswap"
+			],
+			[
+				"inv",
+				"inventory"
+			],
+			[
+				"flus",
+				"flushprint"
+			],
+			[
+				"get",
+				"getTile"
+			],
+			[
+				"next",
+				"nextInventoryItem"
+			],
+			[
+				"sourc",
+				"sourceSpread"
+			],
+			[
+				"level",
+				"levelId"
+			],
+			[
+				"inter",
+				"interfaceText"
+			],
+			[
+				"type",
+				"typeColors"
+			],
+			[
+				"setTil",
+				"setTileTypeById"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"getTil",
+				"getTile"
+			],
+			[
+				"getTile",
+				"getTileById"
+			],
+			[
+				"rese",
+				"resetsAll"
+			],
+			[
+				"reset",
+				"resetsTime"
+			],
+			[
+				"asse",
+				"assetManager"
+			],
+			[
+				"almost",
+				"almost-nothing"
+			],
+			[
+				"set",
+				"setFont"
+			],
+			[
+				"game",
+				"gamestate"
+			],
+			[
+				"sele",
+				"selectedItem"
+			],
+			[
+				"menu",
+				"menuItems"
+			],
+			[
+				"boar",
+				"boardSize"
+			],
+			[
+				"walldi",
+				"walldissolve"
+			],
+			[
+				"inte",
+				"interfaceText"
+			],
+			[
+				"board",
+				"boardSize"
+			],
+			[
+				"cam",
+				"camScale"
+			],
+			[
+				"image",
+				"imageExt"
+			],
+			[
 				"enem",
 				"enemyCount"
 			],
@@ -36,10 +180,6 @@
 				"inheritAngle"
 			],
 			[
-				"game",
-				"gameobjects"
-			],
-			[
 				"Game",
 				"Gameobject"
 			],
@@ -70,10 +210,6 @@
 			[
 				"title",
 				"titleSpacing"
-			],
-			[
-				"sele",
-				"selectedItem"
 			],
 			[
 				"focus",
@@ -152,10 +288,6 @@
 				"animationset"
 			],
 			[
-				"image",
-				"imageFolder"
-			],
-			[
 				"iden",
 				"identityVersion"
 			],
@@ -180,10 +312,6 @@
 				"getTileTypeById"
 			],
 			[
-				"getTile",
-				"getTileIdFromCoords"
-			],
-			[
 				"til",
 				"tilesize"
 			],
@@ -198,10 +326,6 @@
 			[
 				"tilse",
 				"tilesize"
-			],
-			[
-				"getTil",
-				"getTileTypeById"
 			],
 			[
 				"else",
@@ -320,10 +444,6 @@
 				"activeColor"
 			],
 			[
-				"menu",
-				"menubutton"
-			],
-			[
 				"scal",
 				"scaleHeight"
 			],
@@ -394,136 +514,32 @@
 			[
 				"lyte",
 				"lytedevLogo_update"
-			],
-			[
-				"c",
-				"currentQuad"
-			],
-			[
-				"curren",
-				"currentlogo"
-			],
-			[
-				"lyted",
-				"lytedevLogo"
-			],
-			[
-				"graph",
-				"love.graphics.print"
-			],
-			[
-				"Gui",
-				"GUILayout"
-			],
-			[
-				"Network",
-				"NetworkPlayer"
-			],
-			[
-				"Remov",
-				"RemovePlayer"
-			],
-			[
-				"Player",
-				"PlayerJoinRequest"
-			],
-			[
-				"rec",
-				"love.graphics.rectangle"
-			],
-			[
-				"gra",
-				"love.graphics.circle"
-			],
-			[
-				"key",
-				"love.keypressed"
-			],
-			[
-				"grap",
-				"love.graphics.draw"
-			],
-			[
-				"or",
-				"originalTime"
-			],
-			[
-				"players",
-				"playersDownloaded"
-			],
-			[
-				"play",
-				"playersDownloaded"
-			],
-			[
-				"password",
-				"password"
-			],
-			[
-				"KEYS",
-				"KEY_MOUSE_OFFSET"
-			],
-			[
-				"clock",
-				"Clock"
-			],
-			[
-				"pr",
-				"priority"
-			],
-			[
-				"P",
-				"p"
-			],
-			[
-				"in",
-				"inventory"
-			],
-			[
-				"s",
-				"slot_name"
-			],
-			[
-				"slot",
-				"slot_name"
-			],
-			[
-				"gear",
-				"gear_bonus"
-			],
-			[
-				"pla",
-				"players"
-			],
-			[
-				"attack",
-				"attackers"
-			],
-			[
-				"id",
-				"id"
-			],
-			[
-				"target",
-				"target_enemy"
-			],
-			[
-				"to_",
-				"to_full_s"
-			],
-			[
-				"effec",
-				"effects_list"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "main.lua",
+			"file": "scenes/help.lua",
 			"settings":
 			{
-				"buffer_size": 253,
+				"buffer_size": 5109,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "conf.lua",
+			"settings":
+			{
+				"buffer_size": 772,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.bat",
+			"settings":
+			{
+				"buffer_size": 712,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,32 +547,63 @@
 			"file": "scenes/game.lua",
 			"settings":
 			{
-				"buffer_size": 176,
+				"buffer_size": 12072,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "utils.lua",
+			"file": "scenes/win.lua",
 			"settings":
 			{
-				"buffer_size": 428,
-				"line_ending": "Windows",
-				"name": "utils.lua"
-			}
-		},
-		{
-			"file": "conf.lua",
-			"settings":
-			{
-				"buffer_size": 695,
+				"buffer_size": 1703,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "hump/gamestate.lua",
+			"file": "assets/types.lua",
 			"settings":
 			{
-				"buffer_size": 2769,
+				"buffer_size": 4001,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 937,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/assetmanager.lua",
+			"settings":
+			{
+				"buffer_size": 1563,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scenes/menu.lua",
+			"settings":
+			{
+				"buffer_size": 3164,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 238,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Daniel/Google Drive/projects/ld26web/index.html",
+			"settings":
+			{
+				"buffer_size": 1058,
 				"line_ending": "Unix"
 			}
 		}
@@ -593,6 +640,30 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Daniel/Google Drive/projects/ld26/scenes/game.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/tile.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/scenes/menu.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/assets/assetmanager.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/utils.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/main.lua",
+		"/C/Users/Daniel/Documents/Test.txt",
+		"/C/Users/Daniel/Google Drive/projects/ld26/hump/gamestate.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/package.bat",
+		"/C/Users/Daniel/Google Drive/projects/ld26/README.md",
+		"/C/Users/Daniel/Google Drive/projects/ld26/conf.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/scenes/win.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/scenes/game.lua.bak.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/scenes/game.lua.bak",
+		"/C/Users/Daniel/Google Drive/projects/ld26/scenes/tile.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/alertlist.txt",
+		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/scenes/mainmenu.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/assets/font/opensans_semibold.ttf",
+		"/C/Users/Daniel/Google Drive/projects/ld26/assets/levels/level2.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/assets/levels/level1.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/gameobjects/gameobject.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/gameobjects/sprite.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/gameobjects/tiles/origin.lua",
+		"/C/Users/Daniel/Google Drive/projects/ld26/gameobjects/tile.lua",
 		"/C/Users/Daniel/Google Drive/projects/ld26/ld26.sublime-project",
 		"/C/Users/Daniel/Google Drive/projects/ld26practice/utils.lua",
 		"/C/Users/Daniel/Google Drive/projects/ld26practice/ld26practice.sublime-project",
@@ -625,7 +696,6 @@
 		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/scenes/quit.lua",
 		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/button.lua",
 		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/conf.lua",
-		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/scenes/mainmenu.lua",
 		"/C/Users/Daniel/Google Drive/projects/warpedge/main.lua",
 		"/C/Users/Daniel/Google Drive/projects/love2d/escapeprevention/hump/class.lua",
 		"/C/Users/Daniel/Google Drive/projects/warpedge/utils.lua",
@@ -697,30 +767,7 @@
 		"/C/Users/Daniel/Google Drive/projects/warpedge/animations/animationset.lua",
 		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/animations/death.dat",
 		"/C/Users/Daniel/Google Drive/projects/warpedge/assets/animations/tiles.dat",
-		"/C/Users/Daniel/Google Drive/projects/warpedge/animations/animationframe.lua",
-		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Warp Edge/Warp Edge/Warp Edge/Character.cs",
-		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Warp Edge/Warp Edge/Warp Edge/Level.cs",
-		"/C/Users/Daniel/Documents/Visual Studio 2010/Projects/Warp Edge/Warp Edge/Warp Edge/bin/x86/Debug/settings.txt",
-		"/C/Users/Public/Games/Minecraft/tekkbin/server.properties",
-		"/C/Users/Daniel/Documents/project_battery_design_doc",
-		"/C/Users/Daniel/Documents/dese.mo.gov_divcareered_documents_GED_application.pdf",
-		"/C/Users/Daniel/Documents/castlestoryfaq. You must have paid $25 on the Castle Story kick",
-		"/C/Users/Daniel/Google Drive/projects/warpedge/misc/fader.lua",
-		"/C/Users/Public/Applications/Sublime/Data/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Public/Applications/Sublime/Data/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Daniel/Google Drive/projects/warpedge/hump/gamestate.lua",
-		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/menuitem.lua",
-		"/C/Users/Daniel/Google Drive/projects/warpedge/gui/label.lua",
-		"/C/Users/Public/Applications/xampp/htdocs/dfr/index.php",
-		"/C/Users/Public/Applications/xampp/htdocs/dfr/daniel_flanagan_resume.html",
-		"/C/Users/Public/Applications/xampp/htdocs/old_projects/kfr/karen_flanagan_resume.html",
-		"/C/Users/Public/Applications/xampp/htdocs/dfr/reset.css",
-		"/C/Users/Public/Applications/xampp/htdocs/dfr/style.css",
-		"/C/Users/Public/Applications/xampp/htdocs/dfr/fileupload.php",
-		"/C/Users/Daniel/Documents/wifi",
-		"/C/Users/Daniel/Google Drive/projects/warpedge/lick.lua",
-		"/C/Users/Daniel/Google Drive/projects/warpedge/warpedge.sublime-project",
-		"/C/Users/Daniel/Google Drive/projects/warpedge/hump/ringbuffer.lua"
+		"/C/Users/Daniel/Google Drive/projects/warpedge/animations/animationframe.lua"
 	],
 	"find":
 	{
@@ -728,9 +775,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 92.0,
 		"where_history":
 		[
+			"C:\\Users\\Daniel\\Google Drive\\projects\\ld26",
+			"./*",
 			""
 		]
 	},
@@ -739,6 +788,58 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"setVolume",
+			"restart",
+			"\"win\"",
+			"hopeless",
+			"self.hopeless ",
+			"restart",
+			"print",
+			"146",
+			"cursorPos",
+			"winning",
+			"type",
+			"setTile",
+			"cursorPos",
+			"s ",
+			"coordsTo",
+			"type",
+			"ttype",
+			"setTileById",
+			"setTileTypeBy",
+			"this",
+			"setTileTypeById",
+			"setTileType",
+			"getTile",
+			"self.board",
+			"types",
+			"color",
+			"types",
+			"update(",
+			"setTileType",
+			"setTileById(",
+			"setTile(",
+			"getTileById(",
+			"getTile(",
+			"board[",
+			"print",
+			".time =",
+			"setTIle",
+			".id = ",
+			"id = ",
+			"Pause",
+			"Help",
+			"Pause",
+			"fromimage",
+			"Space",
+			"selectedItem",
+			"text",
+			"Menu",
+			"switch(",
+			"switch",
+			"escape",
+			"Game",
+			"config.screen.scale",
 			"was",
 			"self.player",
 			"sin",
@@ -814,59 +915,7 @@
 			"Button",
 			"v = ",
 			"ground",
-			"quit",
-			"leave",
-			"quit",
-			"join",
-			"JOIN",
-			"hili",
-			":",
-			"ownmsgnick = ",
-			"time",
-			"sb-item",
-			"%c",
-			"time",
-			"bar",
-			"login",
-			"log",
-			"    ",
-			"'",
-			",",
-			"tuple, array",
-			"is_array(other)",
-			"instanceof",
-			"range",
-			"event",
-			"\\n",
-			"true",
-			"false",
-			"nil",
-			"@",
-			"true",
-			"false",
-			"nil",
-			"@",
-			";",
-			"cpp",
-			"span",
-			"}\n",
-			"rising_",
-			"DELETE FROM `rising_",
-			"EXISTS `rising_",
-			"f70",
-			"\n\n",
-			"lytedev",
-			"d40",
-			"11px",
-			"? ",
-			"- ",
-			"\n\n",
-			"page",
-			"font-weight",
-			"3deg",
-			"/xampp",
-			"#666",
-			"#555"
+			"quit"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -874,6 +923,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"typeId",
+			"cursor",
+			"typeId",
+			"type",
+			"Win",
+			"currentPage",
+			"Help",
+			"Menu",
+			"self.scale",
 			"self",
 			"print(",
 			"y",
@@ -1003,97 +1061,48 @@
 			[
 				{
 					"buffer": 0,
-					"file": "main.lua",
+					"file": "scenes/help.lua",
 					"settings":
 					{
-						"buffer_size": 253,
+						"buffer_size": 5109,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								190,
-								190
+								3380,
+								3380
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.tmLanguage"
+							"spell_check": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 648.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "scenes/game.lua",
-					"settings":
-					{
-						"buffer_size": 176,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "utils.lua",
-					"settings":
-					{
-						"buffer_size": 428,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								247,
-								247
-							]
-						],
-						"settings":
-						{
-							"auto_name": "utils.lua",
-							"syntax": "Packages/Lua/Lua.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "conf.lua",
 					"settings":
 					{
-						"buffer_size": 695,
+						"buffer_size": 772,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								695,
-								695
+								210,
+								210
 							]
 						],
 						"settings":
@@ -1109,25 +1118,244 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "hump/gamestate.lua",
+					"buffer": 2,
+					"file": "package.bat",
 					"settings":
 					{
-						"buffer_size": 2769,
+						"buffer_size": 712,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1860,
-								1860
+								712,
+								712
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scenes/game.lua",
+					"settings":
+					{
+						"buffer_size": 12072,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1588,
+								1588
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Lua/Lua.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 290.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scenes/win.lua",
+					"settings":
+					{
+						"buffer_size": 1703,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1344,
+								1344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/types.lua",
+					"settings":
+					{
+						"buffer_size": 4001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								914,
+								914
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "main.lua",
+					"settings":
+					{
+						"buffer_size": 937,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								607,
+								607
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "assets/assetmanager.lua",
+					"settings":
+					{
+						"buffer_size": 1563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1364,
+								1364
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "scenes/menu.lua",
+					"settings":
+					{
+						"buffer_size": 3164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1370,
+								1370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 219.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/Daniel/Google Drive/projects/ld26web/index.html",
+					"settings":
+					{
+						"buffer_size": 1058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1058,
+								1058
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1171,7 +1399,7 @@
 	"menu_visible": false,
 	"output.exec":
 	{
-		"height": 72.0
+		"height": 183.0
 	},
 	"replace":
 	{
