@@ -62,7 +62,6 @@ function Help:nextPage()
         end
     until self.helpPages[self.currentPage]
     local bs = assetManager:getNewSound("beep")
-    bs:setVolume(0.2)
     love.audio.play(bs)
 end
 
@@ -74,7 +73,6 @@ function Help:previousPage()
         end
     until self.helpPages[self.currentPage]
     local bs = assetManager:getNewSound("beep")
-    bs:setVolume(0.2)
     love.audio.play(bs)
 end
 

@@ -45,7 +45,6 @@ function Menu:nextMenuItem()
         end
     until self.menuItems[self.selectedItem].callback
     local bs = assetManager:getNewSound("beep")
-    bs:setVolume(0.2)
     love.audio.play(bs)
 end
 
@@ -57,7 +56,6 @@ function Menu:previousMenuItem()
         end
     until self.menuItems[self.selectedItem].callback
     local bs = assetManager:getNewSound("beep")
-    bs:setVolume(0.2)
     love.audio.play(bs)
 end
 

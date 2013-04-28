@@ -41,7 +41,7 @@ function walldissolve(tile, game, x, y, dt)
         for yy = y - 1, y + 1 do
             game:setTileType(xx, yy, 1)
             local ds = assetManager:getNewSound("dissolve")
-            ds:setVolume(0.05)
+            ds:setVolume(0.5)
             love.audio.play(ds)
         end
     end
@@ -67,7 +67,6 @@ function sideswap(tile, game, x, y, dt)
         local ss = assetManager:getNewSound("swap")
         -- ss:setPitch(p)
         love.audio.play(ss)
-        ss:setVolume(0.2)
         game.playedSwapSound = true
     end
 

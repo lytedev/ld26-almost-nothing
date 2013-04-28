@@ -15,12 +15,15 @@ require("utils")
 local Gamestate = require("hump.gamestate")
 
 function love.load()
-    local mtrk = assetManager:getMusic("almost-something")
     love.graphics.setIcon(assetManager:getImage("logo"))
     love.graphics.setFont(assetManager:getFont("pf_tempesta_seven_condensed", 16, "px"))
     love.graphics.setFont(assetManager:getFont("pf_tempesta_seven_condensed", 32, "px2"))
     love.graphics.setBackgroundColor(17, 17, 17, 255)
-    mtrk:setVolume(0.2)
+
+    love.audio.setVolume(0.7)
+
+    local mtrk = assetManager:getMusic("almost-something")
+    mtrk:setVolume(0.4)
     mtrk:setLooping(true)
     mtrk:play()
     switchStates("menu")

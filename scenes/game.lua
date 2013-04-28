@@ -17,6 +17,7 @@ function Game:init()
     self.playedSwapSound = false
     self.levelSize = vector(0, 0)
     self.winning = false
+    self.restarting = false
     self.levelId = 0
     self.level = {}
     self.inventory = {}
@@ -24,7 +25,7 @@ function Game:init()
     self.paused = true
     self.hopeless = false
 
-    self:loadLevel(1)
+    self:loadLevel(11)
 end
 
 function Game:loadLevel(id)
@@ -114,11 +115,13 @@ function Game:win()
         self.winning = true
         return
     end
+end
+
+function Game:_win()
     self.winning = false
     self.levelId = self.levelId + 1
     Game:loadLevel(self.levelId)
     local ws = assetManager:getNewSound("win")
-    ws:setVolume(0.2)
     love.audio.play(ws)
     self.paused = true
     self.hopeless = false
@@ -178,13 +181,20 @@ function Game:getTileById(id)
 end
 
 function Game:restart()
+    if not self.restarting then
+        self.restarting = true
+        return
+    end
+end
+
+function Game:_restart()
     local cp = self.cursor
     self:loadLevel(self.levelId)
     self.cursor = cp
+    self.restarting = false
     self.paused = true
     self.hopeless = false
     local rs = assetManager:getNewSound("restart")
-    rs:setVolume(0.2)
     love.audio.play(rs)
 end
 
@@ -267,7 +277,11 @@ end
 
 function Game:update(dt)
     if self.winning then
-        self:win()
+        self:_win()
+        return
+    end
+    if self.restarting then
+        self:_restart()
         return
     end
     if self.paused then return end
@@ -286,7 +300,6 @@ function Game:update(dt)
         if self.inventory[2] then
             if self.inventory[2] < 1 and tsources < 1 and not self.hopeless then
                 local hs = assetManager:getNewSound("hopeless")
-                hs:setVolume(0.4)
                 love.audio.play(hs)
                 self.hopeless = true
             end
