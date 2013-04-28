@@ -37,6 +37,10 @@ function Help:init()
             title = "Fizzle Block",
             text = "The Fizzle block temporarily removes all adjacent blocks, replacing them with Almost Nothing blocks which will turn into Wall blocks after a second. These blocks need to be timed properly for success!",
         },
+        {
+            title = "Swap Block",
+            text = "The Swap block infects an adjacent block, causing it to move against it's will.",
+        },
     }
 
     self.currentPage = 1
@@ -49,6 +53,9 @@ function Help:nextPage()
             self.currentPage = 1
         end
     until self.helpPages[self.currentPage]
+    local bs = assetManager:getNewSound("beep")
+    bs:setVolume(0.2)
+    love.audio.play(bs)
 end
 
 function Help:previousPage()
@@ -58,6 +65,9 @@ function Help:previousPage()
             self.currentPage = #self.helpPages
         end
     until self.helpPages[self.currentPage]
+    local bs = assetManager:getNewSound("beep")
+    bs:setVolume(0.2)
+    love.audio.play(bs)
 end
 
 function Help:keypressed(k)

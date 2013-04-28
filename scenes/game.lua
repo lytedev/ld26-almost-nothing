@@ -13,6 +13,8 @@ end
 function Game:init()
     self.types = require("assets.types")
 
+    self.playedSourceSound = false
+    self.playedSwapSound = false
     self.levelSize = vector(0, 0)
     self.winning = false
     self.levelId = 0
@@ -26,6 +28,7 @@ function Game:init()
 end
 
 function Game:loadLevel(id)
+    self.selectedInventoryItem = 0
     self.level = {}
     self.inventory = {}
     self.levelId = id
@@ -114,6 +117,7 @@ function Game:win()
     self.winning = false
     self.levelId = self.levelId + 1
     Game:loadLevel(self.levelId)
+    love.audio.play(assetManager:getNewSound("win"))
     self.paused = true
     self.hopeless = false
 end
@@ -172,9 +176,12 @@ function Game:getTileById(id)
 end
 
 function Game:restart()
+    local cp = self.cursor
     self:loadLevel(self.levelId)
+    self.cursor = cp
     self.paused = true
     self.hopeless = false
+    love.audio.play(assetManager:getNewSound("restart"))
 end
 
 function Game:keypressed(k)
@@ -192,6 +199,7 @@ function Game:keypressed(k)
         if sii then
             local ctid = self:getTile(self.cursor.x, self.cursor.y).typeId
             if sii >= 1 and ctid == 1 then
+                love.audio.play(assetManager:getNewSound("drop"))
                 self:setTileType(self.cursor.x, self.cursor.y, siiid)
                 sii = sii - 1
                 self.inventory[siiid] = sii
@@ -259,6 +267,8 @@ function Game:update(dt)
         return
     end
     if self.paused then return end
+    self.playedSourceSound = false
+    self.playedSwapSound = false
     local tsources = 0
     for i = 1, #self.level do
         local x, y = self:idToCoords(i)
@@ -268,8 +278,15 @@ function Game:update(dt)
             if t.typeId == 2 then tsources = tsources + 1 end
         end
     end
-    if self.inventory[2] < 1 and tsources < 1 then
-        self.hopeless = true
+    if self.inventory then
+        if self.inventory[2] then
+            if self.inventory[2] < 1 and tsources < 1 and not hopeless then
+                local hs = assetManager:getNewSound("hopeless")
+                hs:setVolume(0.4)
+                love.audio.play(hs)
+                self.hopeless = true
+            end
+        end
     end
 end
 

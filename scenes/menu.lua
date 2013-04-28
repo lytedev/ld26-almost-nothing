@@ -44,6 +44,9 @@ function Menu:nextMenuItem()
             self.selectedItem = 1
         end
     until self.menuItems[self.selectedItem].callback
+    local bs = assetManager:getNewSound("beep")
+    bs:setVolume(0.2)
+    love.audio.play(bs)
 end
 
 function Menu:previousMenuItem()
@@ -53,6 +56,9 @@ function Menu:previousMenuItem()
             self.selectedItem = #self.menuItems
         end
     until self.menuItems[self.selectedItem].callback
+    local bs = assetManager:getNewSound("beep")
+    bs:setVolume(0.2)
+    love.audio.play(bs)
 end
 
 function Menu:keypressed(k)
@@ -63,6 +69,9 @@ function Menu:keypressed(k)
     if k == " " or k == "return" or k == "enter" then
         local c = self.menuItems[self.selectedItem].callback
         if c then
+            local ss = assetManager:getNewSound("source")
+            -- ss:setPitch(p)
+            love.audio.play(ss)
             c()
         end
     end

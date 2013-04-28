@@ -10,7 +10,7 @@ local AssetManager = Class{
 
         self.imageExt =     ".png"
         self.fontExt =      ".ttf"
-        self.soundExt =     ".ogg"
+        self.soundExt =     ".wav"
 
         self.images = {}
         self.fonts = {}
@@ -43,14 +43,10 @@ function AssetManager:getFont(f, size, key, ext)
     return self.fonts[key]
 end
 
-function AssetManager:getSound(f, key, ext)
+function AssetManager:getNewSound(f, ext)
     ext = ext or self.soundExt
-    key = key or f
     f = self.assetDir .. self.soundDir .. f .. ext
-    if not self.sounds[key] then
-        self.sounds[key] = love.graphics.newSound(f)
-    end
-    return self.sounds[key]
+    return love.audio.newSource(f)
 end
 
 return AssetManager
