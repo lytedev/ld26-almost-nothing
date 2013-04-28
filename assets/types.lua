@@ -1,59 +1,58 @@
+local Tile = require("tile")
 
-function source(game, x, y, dt)
-    local bid = game:coordsToId(x, y)
-    if bid == -1 then
-        return
-    end
-    local bt = game.board[bid]
-    bt.time = 0
-
-    sourceBlock(game, x,        y + 1,  dt)
-    sourceBlock(game, x,        y - 1,  dt)
-    sourceBlock(game, x + 1,    y,      dt)
-    sourceBlock(game, x - 1,    y,      dt)
+function decaysource(tile, game, x, y, dt)
+    game:setTileType(x, y, 1)
 end
 
-function walldissolve(game, x, y, dt)
+function source(tile, game, x, y, dt)
+    if sourceSpread(tile, game, x + 1, y, dt) == -1 then return end
+    if sourceSpread(tile, game, x - 1, y, dt) == -1 then return end
+    if sourceSpread(tile, game, x, y + 1, dt) == -1 then return end
+    if sourceSpread(tile, game, x, y - 1, dt) == -1 then return end
+
+    game:setTileType(x, y, 7)
+end
+
+function sourceSpread(tile, game, x, y, dt)
+    local t = game:getTile(x, y)
+    if t then
+        if t.typeId == 1 or t.typeId == 5 then
+            game:setTileType(x, y, 2)
+        end
+        if t.typeId == 3 then
+            game:win()
+            return -1
+        end
+    end
+end
+
+function walldissolve(tile, game, x, y, dt)
     for xx = x - 1, x + 1 do
         for yy = y - 1, y + 1 do
-            local bid = game:coordsToId(xx, yy)
-            if bid == -1 then
-                return
-            end
-            local bt = game.board[bid]
-            if bt.id == 4 then
-                bt.id = 1
+            game:setTileType(xx, yy, 1)
+        end
+    end
+end
+
+function tmpwalldissolve(tile, game, x, y, dt)
+    for xx = x - 1, x + 1 do
+        for yy = y - 1, y + 1 do
+            local t = game:setTileType(xx, yy, 5)
+            t.callbackTime = 1
+            t.callback = function(tile, game, x, y, dt)
+                game:setTileType(x, y, 4)
             end
         end
     end
 end
 
-function sourceBlock(game, x, y, dt)
-    local bid = game:coordsToId(x, y)
-    if bid == -1 then
-        return
-    end
-    local bt = game.board[bid]
-
-    if bt.id == 3 then
-        game:win()
-    end
-
-    if bt.id == 1 or bt.id == 3 or bt.id == 6 then
-        bt.id = 2
-        bt.time = 0
-    end
-end
-
-function ending(game, x, y, dt)
-
-end
-
 return {
-    [1] = {c = {17, 17, 17, 255}, name = "Nothing", f = nil, time = 0},
-    [2] = {c = {0, 150, 255, 255}, bc = {0, 0, 0, 32}, name = "Source", f = source, time = 0.1},
-    [3] = {c = {255, 80, 0, 255}, bc = {0, 0, 0, 32}, name = "End", f = ending, time = 0.1},
-    [4] = {c = {128, 128, 128, 255}, name = "Wall", f = nil, time = 0},
-    [5] = {c = {50, 255, 0, 255}, name = "Dissolver", f = walldissolve, time = 0},
-    [6] = {c = {50, 50, 50, 255}, name = "Almost Nothing", f = nil, time = 0},
+    {typeId = nil, time = nil, cbtime = nil, callback = nil, color = nil, name = nil},
+    {typeId = 2, time = 0, cbtime = 0.2, callback = source, color = {0, 150, 255, 255}, name = "Source"},
+    {typeId = 3, time = 0, cbtime = 1000, callback = nil, color = {255, 80, 0, 255}, name = "End"},
+    {typeId = 4, time = 0, cbtime = 1000, callback = nil, color = {128, 128, 128, 255}, name = "Wall"},
+    {typeId = 5, time = 0, cbtime = 1000, callback = nil, color = {50, 50, 50, 255}, name = "Almost Nothing"},
+    {typeId = 6, time = 0, cbtime = 0.2, callback = walldissolve, color = {50, 255, 0, 255}, name = "Dissolver"},
+    {typeId = 7, time = 0, cbtime = 0.4, callback = decaysource, color = {0, 120, 250, 255}, name = "Decayed Source"},
+    {typeId = 8, time = 0, cbtime = 0.2, callback = tmpwalldissolve, color = {40, 200, 0, 255}, name = "Fizzle"},
 }

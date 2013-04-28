@@ -10,12 +10,32 @@ function Help:init()
             text = "To win a level in Almost Nothing, you must get a blue block to touch the orange block. A simple concept, but with the addition of other elements and obstacles, this can become fairly difficult! There will be many times when you need to restart the level, which you can do by pressing the R key.",
         },
         {
-            title = "Pausing",
-            text = "You can pause the game at any time with the P key. Pausing is an important aspect of the game that allows you to stop and think or make a fast move before it's too late.",
-        },
-        {
             title = "Placing Blocks",
             text = "To place a block, move your cursor over a placeable area (the darkest squares in every level) with the arrow keys or WASD and press the Spacebar.\n\nNote that you can ONLY place blocks on Nothing blocks. Even Almost Nothing blocks are enough to keep you from placing a block.",
+        },
+        {
+            title = "Source Block",
+            text = "The Source block spread across any Nothing or Almost Nothing blocks it touches, leaving behind a decaying trail of Decayed Source blocks as it does so. Your objective is to remove any obstacles between the Source block and the End block.",
+        },
+        {
+            title = "End Block",
+            text = "The End block is the block you're trying to reach. All you have to do is get a Source block to touch an End block to win that level. Sounds easy, huh?",
+        },
+        {
+            title = "Wall Block",
+            text = "The Wall block is impassable by Source blocks. If they're in the way, you'll need another block to take care of them.",
+        },
+        {
+            title = "Almost Nothing Blocks",
+            text = "Almost Nothing blocks are identical to Nothing blocks except that you cannot place blocks on them.",
+        },
+        {
+            title = "Dissolver Block",
+            text = "The Dissolver block destroys all adjacent blocks without remorse. It's a block. Of course it doesn't feel anything at all!",
+        },
+        {
+            title = "Fizzle Block",
+            text = "The Fizzle block temporarily removes all adjacent blocks, replacing them with Almost Nothing blocks which will turn into Wall blocks after a second. These blocks need to be timed properly for success!",
         },
     }
 

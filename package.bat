@@ -1,6 +1,7 @@
 del almost-nothing.exe
 del almost-nothing.zip
 del almost-nothing.love
+mv ./.git ../ld26.git
 7z a almost-nothing.love ./
 cp C:\Users\Public\Applications\Love2d\love.exe ./love.exe
 :: copy /b love.exe+almost-nothing.love almost-nothing.exe
@@ -14,3 +15,4 @@ echo love.exe almost-nothing.love >> play.bat
 7z a almost-nothing.zip C:\Users\Public\Applications\Love2d\SDL.dll
 del love.exe
 del play.bat
+mv ../ld26.git ./.git

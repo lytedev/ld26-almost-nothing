@@ -22,6 +22,7 @@ function love.load()
 end
 
 function switchStates(state)
+    print("Switching State to " .. state)
     curState = require("scenes." .. state)
     curState:init()
 end

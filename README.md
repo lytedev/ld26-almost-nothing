@@ -7,3 +7,7 @@ My action-puzzle entry game for Ludum Dare 26, Almost Nothing!
 ## Windows
 
 Unzip "almost-nothing.zip" and run "play.bat"! That's it!
+
+# Ideas/Todos
+
+* Dissolver block triggered by Source blocks
