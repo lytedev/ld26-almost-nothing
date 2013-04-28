@@ -6,7 +6,7 @@ My action-puzzle entry game for Ludum Dare 26, Almost Nothing!
 
 ## Windows
 
-Unzip "almost-nothing.zip" and run "play.bat"! That's it!
+Unzip "almost-nothing.zip" and run "almost-nothing.exe"! That's it!
 
 # Ideas/Todos
 
