@@ -5,7 +5,7 @@ function love.conf(t)
     t.author = "Daniel \"lytedev\" Flanagan"
     t.url = "http://lytedev.com"
     t.identity = "almost-nothing"
-    t.identityVersion = "1.1a"
+    t.identityVersion = "1.1c"
     t.version = "0.8.0"
     t.console = false
     t.release = false

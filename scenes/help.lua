@@ -47,7 +47,7 @@ function Help:init()
         },
         {
             title = "Death Block",
-            text = "The Death block will cause you to lose of a Source block touches it. Beware of the Death block!",
+            text = "The Death block will cause you to lose if a Source block touches it. Beware of the Death block!",
         },
     }
 
