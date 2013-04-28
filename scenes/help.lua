@@ -87,11 +87,11 @@ function Help:draw()
 
         love.graphics.setColor(255, 255, 255, 128)
         love.graphics.setFont(font)
-        love.graphics.printf(page.text, 10, 36, sw - 20, "left")
+        love.graphics.printf(page.text, 10, 12 + tfont:getHeight(), sw - 20, "left")
     end
 
     local npages = #self.helpPages
-    local ih = 32
+    local ih = config.screen.interfaceHeight / 2
     local x1 = 0 - 0.5
     local y1 = sh - ih + 0.5
     local x2 = sw + 0.5

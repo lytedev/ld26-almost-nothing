@@ -5,13 +5,13 @@ function love.conf(t)
     t.author = "Daniel \"lytedev\" Flanagan"
     t.url = "http://lytedev.com"
     t.identity = "almost-nothing"
-    t.identityVersion = "Alpha 0.5"
+    t.identityVersion = "Alpha 0.6"
     t.version = "0.8.0"
     t.console = false
     t.release = false
 
-    t.screen.interfaceHeight = 50
-    t.screen.width = 256
+    t.screen.interfaceHeight = 128
+    t.screen.width = 512
     t.screen.height = t.screen.width + t.screen.interfaceHeight
     t.screen.fullscreen = false
     t.screen.vsync = true

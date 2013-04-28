@@ -13,12 +13,14 @@ end
 function Game:init()
     self.types = require("assets.types")
 
+    self.levelSize = vector(0, 0)
     self.winning = false
     self.levelId = 0
     self.level = {}
     self.inventory = {}
     self.selectedInventoryItem = 0
     self.paused = true
+    self.hopeless = false
 
     self:loadLevel(1)
 end
@@ -30,10 +32,9 @@ function Game:loadLevel(id)
 
     local filename = "levels/level" .. id
     local fp = assetManager.assetDir .. assetManager.imageDir .. filename .. assetManager.imageExt
-    print(fp)
     if not love.filesystem.exists(fp) then
         -- Can't find next level, so player wins.
-        print("Couldn't find next level. End of campaign?")
+        -- print("Couldn't find next level. End of campaign?")
         self.currentLevel = 1
         switchStates("win")
         return
@@ -43,10 +44,10 @@ function Game:loadLevel(id)
     local w = img:getWidth()
     local h = img:getHeight()
 
+    self.hopeless = false
     self.levelSize = vector(w, w)
     self.cursor = vector(math.floor(w / 2), math.floor(w / 2))
     self.tileSize = math.floor(love.graphics.getWidth() / w)
-    print(self.tileSize)
 
     local max = (w * w)
     for i = 1, #self.types do
@@ -102,13 +103,10 @@ function Game:loadLevel(id)
         end
     end
 
-    flushprint("Loading Level " .. id)
     self:nextInventoryItem()
-    flushprint("Loading Level " .. id)
 end
 
 function Game:win()
-    print("WIN")
     if not self.winning then
         self.winning = true
         return
@@ -117,6 +115,7 @@ function Game:win()
     self.levelId = self.levelId + 1
     Game:loadLevel(self.levelId)
     self.paused = true
+    self.hopeless = false
 end
 
 function Game:addBlockToInventory(id)
@@ -172,14 +171,19 @@ function Game:getTileById(id)
     return self.level[id]
 end
 
+function Game:restart()
+    self:loadLevel(self.levelId)
+    self.paused = true
+    self.hopeless = false
+end
+
 function Game:keypressed(k)
     if k == "p" or k == "enter" or k == "return" then
         self.paused = false
     end
 
     if k == "r" then
-        self:loadLevel(self.levelId)
-        self.paused = true
+        self:restart()
     end
 
     if k == " " then
@@ -227,7 +231,7 @@ function Game:keypressed(k)
 end
 
 function Game:previousInventoryItem()
-    local counter = 1
+    local counter = 0
     local initialsii = self.selectedInventoryItem
     repeat
         self.selectedInventoryItem = self.selectedInventoryItem - 1
@@ -239,7 +243,7 @@ function Game:previousInventoryItem()
 end
 
 function Game:nextInventoryItem()
-    local counter = 1
+    local counter = 0
     repeat
         self.selectedInventoryItem = self.selectedInventoryItem + 1
         if self.selectedInventoryItem > #self.types then
@@ -255,12 +259,17 @@ function Game:update(dt)
         return
     end
     if self.paused then return end
+    local tsources = 0
     for i = 1, #self.level do
         local x, y = self:idToCoords(i)
         local t = self:getTileById(i)
         if t then
             t:update(self, x, y, dt)
+            if t.typeId == 2 then tsources = tsources + 1 end
         end
+    end
+    if self.inventory[2] < 1 and tsources < 1 then
+        self.hopeless = true
     end
 end
 
@@ -293,8 +302,8 @@ function Game:draw()
     local padding = math.floor(font:getHeight() / 2)
     local sty = 0
     local invx = padding
-    local invy = h - config.screen.interfaceHeight + padding * 2 + font:getHeight()
-    local invsqsz = 16
+    local invy = h - padding * 4
+    local invsqsz = ih / 4
     for i = 1, #self.types do
         if self.inventory[i] then
             if self.inventory[i] >= 1 then
@@ -311,9 +320,28 @@ function Game:draw()
         end
     end
 
+    if self.hopeless then
+        love.graphics.setColor(0, 0, 0, 255)
+        love.graphics.printf("It's looking grim, my friend\nRestart (R)", 0.5, 51, w + 0.5, "center")
+        love.graphics.setColor(255, 255, 255, 255)
+        love.graphics.printf("It's looking grim, my friend\nRestart (R)", 0, 50, w, "center")
+    end
+
     local helpText = ""
+    local numItems = 0
+    for i = 1, #self.types do
+        if self.inventory[i] >= 1 then
+            numItems = numItems + 1
+        end
+    end
+
+    helpText = helpText .. "Restart (R) "
+    if numItems > 1 then
+        helpText = helpText .. "Switch Items (Q/E) "
+    end
+
     if self.paused then
-        helpText = "Unpause (Enter)   "
+        helpText = helpText .. "\nUnpause (Enter) "
     else
         -- helpText = "Pause (Enter)"
     end
@@ -321,7 +349,7 @@ function Game:draw()
     local sii = self.selectedInventoryItem
     if self.inventory[sii] then
         if self.inventory[sii] >= 1 then
-            helpText = helpText .. "Drop " .. self.types[sii].name .. " (Space)"
+            helpText = helpText .. "Drop " .. self.types[sii].name .. " (Space) "
             -- local str = self.types[sii].name
             -- love.graphics.print(str, w - 10 - font:getWidth(str), invy)
         end

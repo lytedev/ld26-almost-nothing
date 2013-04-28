@@ -52,7 +52,7 @@ return {
     {typeId = 3, time = 0, cbtime = 1000, callback = nil, color = {255, 80, 0, 255}, name = "End"},
     {typeId = 4, time = 0, cbtime = 1000, callback = nil, color = {128, 128, 128, 255}, name = "Wall"},
     {typeId = 5, time = 0, cbtime = 1000, callback = nil, color = {50, 50, 50, 255}, name = "Almost Nothing"},
-    {typeId = 6, time = 0, cbtime = 0.2, callback = walldissolve, color = {50, 255, 0, 255}, name = "Dissolver"},
+    {typeId = 6, time = 0, cbtime = 0, callback = walldissolve, color = {50, 255, 0, 255}, name = "Dissolver"},
     {typeId = 7, time = 0, cbtime = 0.4, callback = decaysource, color = {0, 120, 250, 255}, name = "Decayed Source"},
-    {typeId = 8, time = 0, cbtime = 0.2, callback = tmpwalldissolve, color = {40, 200, 0, 255}, name = "Fizzle"},
+    {typeId = 8, time = 0, cbtime = 0, callback = tmpwalldissolve, color = {200, 200, 0, 255}, name = "Fizzle"},
 }
