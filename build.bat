@@ -16,3 +16,4 @@ cp C:\Users\Public\Applications\Love2d\SDL.dll almost-nothing/SDL.dll
 del love.exe
 mv ../ld26.git ./.git
 rm -rf almost-nothing
+
