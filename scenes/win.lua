@@ -21,7 +21,7 @@ end
 function Win:draw()
     local sw = love.graphics.getWidth()
     local sh = love.graphics.getHeight()
-    local ih = config.screen.interfaceHeight / 2
+    local ih = config.window.interfaceHeight / 2
     local x1 = 0 - 0.5
     local y1 = sh - ih + 0.5
     local x2 = sw + 0.5

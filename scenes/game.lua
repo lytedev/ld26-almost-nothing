@@ -320,7 +320,7 @@ function Game:draw()
 
     local w = love.graphics.getWidth()
     local h = love.graphics.getHeight()
-    local ih = config.screen.interfaceHeight
+    local ih = config.window.interfaceHeight
 
     local x1 = 0 - 0.5
     local y1 = h - ih + 0.5
@@ -401,7 +401,7 @@ function Game:draw()
     end
 
     love.graphics.setColor(255, 255, 255, 255)
-    love.graphics.print(helpText, padding, h - config.screen.interfaceHeight + padding)
+    love.graphics.print(helpText, padding, h - config.window.interfaceHeight + padding)
 end
 
 return Game

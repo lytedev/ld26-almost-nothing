@@ -107,7 +107,7 @@ function Help:draw()
     end
 
     local npages = #self.helpPages
-    local ih = config.screen.interfaceHeight / 2
+    local ih = config.window.interfaceHeight / 2
     local x1 = 0 - 0.5
     local y1 = sh - ih + 0.5
     local x2 = sw + 0.5

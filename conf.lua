@@ -6,16 +6,16 @@ function love.conf(t)
     t.url = "http://lytedev.com"
     t.identity = "almost-nothing"
     t.identityVersion = "1.1d"
-    t.version = "0.8.0"
+    t.version = "0.9.2"
     t.console = false
     t.release = false
 
-    t.screen.interfaceHeight = 128
-    t.screen.width = 512
-    t.screen.height = t.screen.width + t.screen.interfaceHeight
-    t.screen.fullscreen = false
-    t.screen.vsync = true
-    t.screen.fsaa = 0
+    t.window.interfaceHeight = 128
+    t.window.width = 512
+    t.window.height = t.window.width + t.window.interfaceHeight
+    t.window.fullscreen = false
+    t.window.vsync = true
+    t.window.fsaa = 0
 
     t.modules.joystick = false
     t.modules.audio = true
